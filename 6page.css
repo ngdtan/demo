@@ -1,54 +1,68 @@
-ul.menu{
+:root {
+    --co1: #06283D;
+    --co2: #1363DF;
+    --co3: #47B5FF;
+    --co4: #DFF6FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: yellow;
+    background-color: var(--co2);
     justify-content: center;
 }
 
-nav > ul.menu {
+nav>ul.menu {
     display: flex;
+    position: fixed;
+    width: 100%;
 }
 
-ul.menu > li > a{
+ul.menu>li>a {
+    color: var(--co4);
     text-decoration: none;
     display: block;
     padding: 20px;
     max-width: 200px;
 }
 
-ul.menu > li > a:hover{
-    background-color: aqua;
-    color: aliceblue;
+ul.menu>li>a:hover {
+    background-color: var(--co1);
+    color: var(--co4);
 }
 
-.subcontent{
+.subcontent {
     display: none;
 }
 
-.sub:hover .subcontent{
+.sub:hover .subcontent {
     display: block;
     position: absolute;
 }
 
-div > img{
-    display: block;
-    position: relative;
+div>img {
     width: 100%;
 }
 
-p > span{
+p>span {
     display: flex;
     font-size: 14pt;
     justify-content: center;
 }
 
-div.doc{
+div.doc {
     width: 75%;
     margin: 0 auto;
 }
 
-td>p{
+td>p {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -56,49 +70,67 @@ td>p{
     margin: 0;
 }
 
-tr>td{
+tr>td {
     height: 70px;
     text-align: center;
 }
 
-td>p:first-child{
+td>p:first-child {
     border: none;
 }
 
-.subcribe{
+.subcribe {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
- }
+}
 
- ul.subcribe > li{
+ul.subcribe>li {
     width: 50%;
- }
+    padding: 10px !important;
+}
 
- input{
+ul.subcribe>li>p {
+    padding: 10px;
+    padding-left: 0px;
+}
+
+input {
     width: 90%;
     height: 30px;
     box-sizing: border-box;
- }
- select{
+}
+
+select {
     width: 90%;
     height: 30px;
- }
+}
 
-ul.choose{
-    justify-content:left;
+ul.choose {
+    justify-content: left;
     display: flex;
     list-style-type: none;
- }
+    padding: 10px;
+}
 
- ul.choose > li{
+ul.choose>li {
     width: 100px;
     text-align: center;
- }
- input.send{
-    width: 10%;
- }
+}
 
- input.send:hover{
+ul.choose>li>input {
+    height: 15px;
+}
+
+div>p.gui>strong {
+    padding: 10px !important;
+}
+
+input.send {
+    width: 10%;
+    margin: 10px !important;
+}
+
+input.send:hover {
     background-color: aqua;
- }
+}
